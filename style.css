@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: #faf7f5;
+} 
+.header {
+
+    text-align: center;
+    background: #1abc9c;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.footer {
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+    margin: 0px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 462px;
+}
+
+
+
+
+.nav-wrapper {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#container {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    box-shadow: 12px 10px 71px -22px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 12px 10px 71px -22px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px 10px 71px -22px rgba(0, 0, 0, 0.75);
+    background-color: #121212;
+    color: #faf7f5;
+}
+.main{
+    background-color: #252525;
+}
+
+/* #container > *{
+display: block;
+background-color: aliceblue;
+} */
+
+
+
+.right-section {
+    width: 20%;
+}
+
+.nav-element {
+    padding: 3px;
+}
+
+.decorator {
+    font-weight: bold;
+}
+
+
+/*Read about positions*/
+
+/* .list-item{
+    position: relative;
+}
+
+.list-item::before{
+    position: absolute;
+    content: "";
+} */
