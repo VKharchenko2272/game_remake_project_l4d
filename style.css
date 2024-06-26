@@ -11,6 +11,14 @@
     color: rgb(255, 255, 255);
     font-size: 30px;
 }
+/* Сделать лого для хедера */
+/* .header{ 
+    width: 20 px; 
+    height: 20 px; 
+    background-color: #3f23f4; 
+    margin-bottom: 5 px; 
+    /* background-image: url(images/имя файла)   
+    }  */
 
 .footer {
     text-align: center;
@@ -79,15 +87,27 @@ background-color: aliceblue;
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Создание 3 колонок с одинаковой шириной */
     grid-gap: 5px; /* Отступы между ячейками */
+    
+    
   }
   .grid-item {
+
     background-color: lightblue;
-    padding: 10px;
+    padding: 0px;
     text-align: center;
   }
 
+.grid-item img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    top: 0;
+    left: 0;
+  } 
+
 .item1{
     grid-area: 2 / 1 / 6 / 1;
+  
 }
 .item2{
     grid-area: 2 / 2 / 5 / 4;
