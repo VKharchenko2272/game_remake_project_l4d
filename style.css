@@ -30,8 +30,6 @@
 }
 
 
-
-
 .nav-wrapper {
     width: 20%;
     display: flex;
@@ -77,8 +75,41 @@ display: block;
 background-color: aliceblue;
 } */
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Создание 3 колонок с одинаковой шириной */
+    grid-gap: 5px; /* Отступы между ячейками */
+  }
+  .grid-item {
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+  }
 
-
+.item1{
+    grid-area: 2 / 1 / 6 / 1;
+}
+.item2{
+    grid-area: 2 / 2 / 5 / 4;
+}
+.item4{
+    grid-area: 6 / 1 / 25 / 1;
+}
+.item3{
+    grid-area: 2 / 4 / 15 / 5;
+}
+.item5{
+    grid-area: 5 / 2 / 25 / 3;
+}
+.item6{
+    grid-area: 5 / 3 / 38 / 3;
+}
+.item8{
+    grid-area: 25 / 1 / 38 / 3;
+}
+.item7{
+    grid-area: 15 / 4 / 38/ 5;
+}
 
 .right-section {
     width: 20%;
