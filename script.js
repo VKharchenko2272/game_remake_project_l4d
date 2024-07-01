@@ -8,10 +8,10 @@ async function getsapi() {
 
     var myName = document.getElementById("personaname");
 
-  
+
 }
 
 var name = getsapi();
 
-//a find element to modifi 
+//a find element to modifi
 //change element in span to 
