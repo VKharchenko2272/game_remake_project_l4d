@@ -23,7 +23,7 @@
 ::placeholder {
     font-style: italic;
     font-size: 1em;
-    color: rgb(99, 99, 99);
+    color: rgb(160, 160, 160);
 }
 
 .searchinput {
@@ -97,7 +97,7 @@
 .wrapper {
     display: flex;
     flex-direction: row;
-    min-height: 462px;
+    min-height: 560px;
 }
 
 
