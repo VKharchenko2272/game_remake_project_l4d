@@ -4,22 +4,6 @@
     color: #faf7f5;
 }
 
-/* .header {
-
-    text-align: center;
-    background: #20c1a1;
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-} */
-
-/* Сделать лого для хедера */
-/* .header{ 
-    width: 20 px; 
-    height: 20 px; 
-    background-color: #3f23f4; 
-    margin-bottom: 5 px; 
-    /* background-image: url(images/имя файла)   
-    }  */
 .main-header {
 
     background: #20c1a1;
@@ -34,6 +18,22 @@
 
     padding: 0px 20px;
 
+}
+
+::placeholder {
+    font-style: italic;
+    font-size: 1em;
+    color: rgb(99, 99, 99);
+}
+
+.searchinput {
+    color: rgb(99, 99, 99);
+    font-style: italic;
+    font-size: 0.5em;
+    outline: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 150px;
 }
 
 .logo img {
@@ -78,11 +78,7 @@
 
 .main-nav input[type=text] {
     float: right;
-    /* padding: 6px; */
     border: none;
-    /* margin-top: 8px; */
-    /* margin-left: 16px; */
-
     font-size: 17px;
     border-radius: 10px;
 }
@@ -109,7 +105,6 @@
     width: 20%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     padding-top: 10px;
 }
 
@@ -145,23 +140,13 @@
     background-color: #252525;
 }
 
-/* #container > *{
-display: block;
-background-color: aliceblue;
-} */
-
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* Создание 3 колонок с одинаковой шириной */
     grid-gap: 5px;
-    /* Отступы между ячейками */
-
-
-}
+  }
 
 .grid-item {
-
     background-color: lightblue;
     padding: 0px;
     text-align: center;
@@ -177,7 +162,6 @@ background-color: aliceblue;
 
 .item1 {
     grid-area: 2 / 1 / 6 / 1;
-
 }
 
 .item2 {
@@ -216,15 +200,3 @@ background-color: aliceblue;
 .decorator {
     font-weight: bold;
 }
-
-
-/*Read about positions*/
-
-/* .list-item{
-    position: relative;
-}
-
-.list-item::before{
-    position: absolute;
-    content: "";
-} */

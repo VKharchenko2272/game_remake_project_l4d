@@ -7,7 +7,7 @@ async function getsapi() {
     var result = await response.json();
 
     var myName = document.getElementById("personaname");
-
+    
 
 }
 
