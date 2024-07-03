@@ -1,17 +1,16 @@
-async function getsapi() {
+"use strict";
 
-
-    var url = '';
-
-    var response = await fetch(url);
-    var result = await response.json();
-
-    var myName = document.getElementById("personaname");
-    
-
-}
-
-var name = getsapi();
-
-//a find element to modifi
-//change element in span to 
+await fetch("")
+.then((result)=>{
+    return result.json()
+}).then((data)=>{
+    console.log(data)
+    let videos = data.items
+    nextPageToken = data.nextPageToken
+    let videoContainer = document.querySelector(".right-section")
+    for(video of videos){
+        videoContainer.innerHTML += `
+            <img src = "$video.snippet.thumbnails.default.url">
+        `
+    }
+})
