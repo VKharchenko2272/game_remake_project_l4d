@@ -1,4 +1,4 @@
-const API_URL = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCIU2XzhmEK2ttqtjBxZqPbQ&maxResults=10&order=date&key=AIzaSyBNufUTStHnGRN61dgYOjgi7ygcWQ-oBHk`;
+const API_URL = ``;
 let nextPageToken = '';
 
 function fetchVideos(pageToken = '') {
@@ -15,7 +15,7 @@ function fetchVideos(pageToken = '') {
             nextPageToken = data.nextPageToken;
             console.log(nextPageToken);
             videos = videos.filter(video => video.snippet.publishTime !== '2013-02-18T22:23:24Z');
-                    
+
             let videoContainer = document.querySelector(".right-section");
             for (let video of videos) {
                 const videoId = video.id.videoId;
@@ -35,7 +35,6 @@ function fetchVideos(pageToken = '') {
         });
 }
 
-
 fetchVideos();
 
 // document.getElementById('load-more').addEventListener('click', () => {
@@ -43,3 +42,18 @@ fetchVideos();
 //         fetchVideos(nextPageToken);
 //     }
 // });
+
+const element = document.querySelector("#resizeButton");
+console.log("Element", element);
+
+element.addEventListener('click', function () {
+
+    const rightSection = document.querySelector('.right-section');
+    const container = document.querySelector('#container');
+    const navWrapper = document.querySelector('.nav-wrapper')
+
+    rightSection.classList.add("resize-section-right");
+    container.classList.add("resize-section-middle")
+    navWrapper.classList.add("resize-section-left")
+});
+

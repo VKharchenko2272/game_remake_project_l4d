@@ -5,19 +5,12 @@
 }
 
 .main-header {
-
     background: #20c1a1;
-
     color: #fff;
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     padding: 0px 20px;
-
 }
 
 ::placeholder {
@@ -33,7 +26,9 @@
     outline: none;
     padding-left: 5px;
     padding-right: 5px;
-    width: 150px;
+    width: 40%;
+    margin-right: 10%;
+
 }
 
 .logo img {
@@ -98,7 +93,7 @@
     display: flex;
     flex-direction: row;
     min-height: 560px;
-    
+
 }
 
 
@@ -123,6 +118,8 @@
     margin-bottom: 10px;
     display: inline-block;
     text-decoration: none;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 #container {
@@ -145,7 +142,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
-  }
+}
 
 .grid-item {
     background-color: lightblue;
@@ -194,15 +191,44 @@
 }
 
 .right-section {
-    
+    text-align: center;
     width: 20%;
 }
-.video-item{
+
+#resizeButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.right-h3 {
+    margin-top: 10px;
+}
+
+.video-item {
+
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 15px;
+    /* width: 80%; */
 }
 
 .decorator {
     font-weight: bold;
+}
+
+.resize-section-right {
+    width: 30%;
+    transition: width 0.3s ease;
+}
+
+.resize-section-middle {
+    width: 55%;
+    transition: width 0.3s ease;
+}
+
+.resize-section-left {
+    width: 15%;
+    transition: width 0.3s ease;
 }
