@@ -1,4 +1,5 @@
-const API_URL = ``;
+"user strict"
+const API_URL = ``;//link
 let nextPageToken = '';
 
 function fetchVideos(pageToken = '') {
@@ -45,15 +46,27 @@ fetchVideos();
 
 const element = document.querySelector("#resizeButton");
 console.log("Element", element);
+let resizeButtonCheck = true;
 
 element.addEventListener('click', function () {
-
     const rightSection = document.querySelector('.right-section');
     const container = document.querySelector('#container');
     const navWrapper = document.querySelector('.nav-wrapper')
 
-    rightSection.classList.add("resize-section-right");
-    container.classList.add("resize-section-middle")
-    navWrapper.classList.add("resize-section-left")
+    if (resizeButtonCheck) {
+        rightSection.classList.add("resize-section-right");
+        container.classList.add("resize-section-middle");
+        navWrapper.classList.add("resize-section-left");
+        resizeButtonCheck = false;
+        console.log(resizeButtonCheck);
+    } else {
+        console.log(resizeButtonCheck);
+        rightSection.classList.remove("resize-section-right");
+        container.classList.remove("resize-section-middle");
+        navWrapper.classList.remove("resize-section-left");
+        resizeButtonCheck = true;
+    }
 });
+
+
 
