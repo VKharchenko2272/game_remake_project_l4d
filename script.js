@@ -52,11 +52,13 @@ element.addEventListener('click', function () {
     const rightSection = document.querySelector('.right-section');
     const container = document.querySelector('#container');
     const navWrapper = document.querySelector('.nav-wrapper')
+    const buttonImage = document.querySelector("#resizeButton");
 
     if (resizeButtonCheck) {
         rightSection.classList.add("resize-section-right");
         container.classList.add("resize-section-middle");
         navWrapper.classList.add("resize-section-left");
+        buttonImage.style.background = 'url(img/triangle-opposite.png)';
         resizeButtonCheck = false;
         console.log(resizeButtonCheck);
     } else {
@@ -64,6 +66,9 @@ element.addEventListener('click', function () {
         rightSection.classList.remove("resize-section-right");
         container.classList.remove("resize-section-middle");
         navWrapper.classList.remove("resize-section-left");
+      
+        buttonImage.style.background = 'url(img/triangle.png)';
+
         resizeButtonCheck = true;
     }
 });
