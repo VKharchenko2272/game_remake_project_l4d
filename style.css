@@ -10,7 +10,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 20px;
+
+}
+
+.main-header>* {
+    margin: 5px;
 }
 
 ::placeholder {
@@ -27,8 +31,15 @@
     padding-left: 5px;
     padding-right: 5px;
     width: 40%;
-    margin-right: 10%;
+    float: right;
+    border: none;
+    font-size: 17px;
+    border-radius: 10px;
+    align-self: center;
+}
 
+.logo-wrapper {
+    width: 30%;
 }
 
 .logo img {
@@ -43,18 +54,24 @@
 
 }
 
-.main-nav ul {
-
-    list-style: none;
-
+.main-nav {
+    width: 30%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .main-nav ul li {
 
-    margin-right: 20px;
-
+    margin-right: 20px
 }
 
 .main-nav ul li:last-child {
@@ -71,12 +88,7 @@
 
 }
 
-.main-nav input[type=text] {
-    float: right;
-    border: none;
-    font-size: 17px;
-    border-radius: 10px;
-}
+
 
 .footer {
     text-align: center;
@@ -196,13 +208,24 @@
     text-align: center;
     width: 20%;
     transition: width 0.3s ease;
+    position: relative;
+}
+.right-section-videos {
+    text-align: center;
+    width: 20%;
+    transition: width 0.3s ease;
+    position: relative;
 }
 
 #resizeButton {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-}
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 40%;
+    transform: translate(-50%, 0);}
 
 .right-h3 {
     margin-top: 10px;
