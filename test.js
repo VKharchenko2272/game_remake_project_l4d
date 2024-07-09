@@ -1,12 +1,12 @@
-"use strict";
-
+"user strict"
 const API_URL = "";
 let nextPageToken = '';
-
 let tag = document.createElement('script');
+
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
 
 function fetchVideos(pageToken = '') {
     let url = API_URL;
@@ -35,14 +35,13 @@ function fetchVideos(pageToken = '') {
                 console.log(video.snippet.publishTime);
                 console.log(videoContainer);
 
-                const videoElement = document.createElement('div');
-                videoElement.classList.add('video-item');
-                videoElement.innerHTML = `
-                    <iframe src="https://www.youtube.com/embed/${videoId}" frameborder="0" width="80%"
-                    align="center" allowfullscreen></iframe>
-                    <h3 class="video-title">${videoTitle}</h3>
-                `;
-                videoContainer.appendChild(videoElement);
+                videoContainer.innerHTML += 
+                            `<div class="video-item">
+                                <iframe src="https://www.youtube.com/embed/${videoId}" frameborder="0" width = 80%
+                                align-line="center" allowfullscreen></iframe>
+                                <h3 class="video-title">${videoTitle}</h3>
+                            </div>`
+                        ;
             }
         })
         .catch(error => {
@@ -51,7 +50,7 @@ function fetchVideos(pageToken = '') {
 }
 
 fetchVideos();
-
+//work in progress
 // document.getElementById('load-more').addEventListener('click', () => {
 //     if (nextPageToken) {
 //         fetchVideos(nextPageToken);
@@ -65,7 +64,7 @@ let resizeButtonCheck = true;
 element.addEventListener('click', function () {
     const rightSection = document.querySelector('.right-section');
     const container = document.querySelector('#container');
-    const navWrapper = document.querySelector('.nav-wrapper');
+    const navWrapper = document.querySelector('.nav-wrapper')
     const buttonImage = document.querySelector("#resizeButton");
     let action;
 
@@ -91,5 +90,6 @@ element.addEventListener('click', function () {
             buttonImage.style.background = 'url(img/triangle.png)';
             resizeButtonCheck = true;
         }
-    }
+    };
+
 });

@@ -104,7 +104,7 @@
 .wrapper {
     display: flex;
     flex-direction: row;
-    min-height: 560px;
+    min-height: 780px;
 
 }
 
@@ -211,12 +211,7 @@
     position: relative;
 }
 
-.right-section-videos {
-    text-align: center;
-    width: 20%;
-    transition: width 0.3s ease;
-    position: relative;
-}
+
 
 #resizeButton {
     padding: 15px;
@@ -238,8 +233,6 @@
     align-items: center;
     transform: translate(-50%, 0);
 }
-
-;
 
 
 .right-h3 {
@@ -273,3 +266,12 @@
     width: 15%;
     transition: width 0.3s ease;
 }
+
+.videos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+    overflow: visible;
+    justify-content: flex-start;
+}
+
