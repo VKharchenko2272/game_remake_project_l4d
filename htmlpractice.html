@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Left 4 Dead Fun Remake</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css" media="all and (max-width:1039px)">
     <script src="script.js" defer> </script>
 </head>
 
@@ -32,11 +33,14 @@
 
     <div class="wrapper">
         <nav class="nav-wrapper">
-            <a style="text-decoration: none;" class="nav-element" href="darkCarnaval.html">Dark Carnaval</a>
-            <a style="text-decoration: none;" class="nav-element" href="#">Dead Center</a>
-            <a class="nav-element" href="Gallery.html">Gallery</a>
-            <a class="nav-element" href="videos.html">Videos</a>
-            <a class="nav-element" href="#">text</a>
+            <!-- <div class="elements-wrapper"> -->
+                <a class="nav-element" href="darkCarnaval.html">Dark Carnaval</a>
+                <a class="nav-element" href="#">Dead Center</a>
+                <a class="nav-element" href="Gallery.html">Gallery</a>
+                <a class="nav-element" href="videos.html">Videos</a>
+                <a class="nav-element" href="#">text</a>
+            <!-- </div> -->
+
         </nav>
         <div id="container">
             <div>
@@ -100,7 +104,7 @@
 
         </div>
         <section class="right-section">
-            <h3 class="right-h3"> My latest videos!</h3>
+            <a class="right-h3" href="videos.html"><h3 class="right-h3" > My latest videos:</h3></a>
 
             <button id="resizeButton"></button>
             <!-- <span id="personalname">X</span> -->
