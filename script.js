@@ -35,7 +35,7 @@ function fetchVideos(pageToken = '') {
                 videoElement.innerHTML = `
                     <iframe src="https://www.youtube.com/embed/${videoId}" frameborder="0" width="100%"
                     align="center" allowfullscreen></iframe>
-                    <h3 class="video-title">${videoTitle}</h3>
+                    <p class="video-title">${videoTitle}</p>
                 `;
                 videoContainer.appendChild(videoElement);
             }
